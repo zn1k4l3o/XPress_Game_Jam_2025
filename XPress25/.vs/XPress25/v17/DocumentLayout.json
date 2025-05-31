@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\unity projekti\\game\\xpress_game_jam_2025\\xpress25\\assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\unity projekti\\game\\xpress_game_jam_2025\\xpress25\\assets\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\assets\\healthpowerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\healthpowerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\assets\\attackplayercheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\attackplayercheck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\assets\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Assets\\LevelManager.cs",
+              "ToolTip": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\LevelManager.cs",
+              "RelativeToolTip": "Assets\\LevelManager.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAA8wGQAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:41:11.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HealthPowerup.cs",
+              "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\HealthPowerup.cs",
+              "RelativeDocumentMoniker": "Assets\\HealthPowerup.cs",
+              "ToolTip": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\HealthPowerup.cs",
+              "RelativeToolTip": "Assets\\HealthPowerup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T13:24:04.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AttackPlayerCheck.cs",
+              "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\AttackPlayerCheck.cs",
+              "RelativeDocumentMoniker": "Assets\\AttackPlayerCheck.cs",
+              "ToolTip": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\AttackPlayerCheck.cs",
+              "RelativeToolTip": "Assets\\AttackPlayerCheck.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T12:03:06.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemyController.cs",
+              "ToolTip": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\EnemyController.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAowE4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T10:58:07.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerController.cs",
+              "ToolTip": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\PlayerController.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAADwv0wAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T09:27:56.883Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
