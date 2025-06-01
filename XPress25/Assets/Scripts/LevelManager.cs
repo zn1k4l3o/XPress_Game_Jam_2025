@@ -85,6 +85,8 @@ public class LevelManager : MonoBehaviour
                 GameObject newBoss = Instantiate(boss, bottomLeftSpawnBorder, Quaternion.identity);
                 newBoss.GetComponent<EnemyController>().canPlay = true;
                 newBoss.GetComponent<EnemyController>().isFinal = true;
+                enemyControllers.Add(newBoss.GetComponent<EnemyController>());
+                GameObject.Find("Audio").GetComponent<FinalAudio>().ReplaceMusic();
                 isTwoPhase = false;
             }
             UpdateTimer();
