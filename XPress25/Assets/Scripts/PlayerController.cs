@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Permissions")]
     public bool canRun = false;
-    public bool canDash = false;
+public bool canDash = false;
     public bool canHit = false;
 
     [Header("Movement")]
@@ -117,17 +117,21 @@ public class PlayerController : MonoBehaviour
             }
             else staminaRefreshFrame++;
         }
+        else
+        {
+            rb.linearVelocity = Vector2.zero; 
+        }
 
     }
 
     void HandleInput()
     {
         moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-       if (moveInput == Vector2.zero)
+       if (moveInput == Vector2.zero && anim.GetBool("isRunning") == true)
         {
             anim.SetBool("isRunning", false);
         }
-       else
+       else if (moveInput != Vector2.zero && anim.GetBool("isRunning") == false)
         {
             anim.SetBool("isRunning", true);
         }
@@ -149,7 +153,7 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(Hit());
         }
-        if ((Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) && canRun)
+        if ((Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) && canRun && currentStamina > 1)
         {
             isRunning = true;
         }
@@ -212,8 +216,10 @@ public class PlayerController : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Mrtaf");
-        levelManager.ShowDeathScreen();
+        int deaths = PlayerPrefs.GetInt("Deaths", 0);
+        deaths += 1;
+        PlayerPrefs.SetInt("Deaths", deaths);
+        levelManager.ShowDeathScreen(deaths);
     }
 
     public Vector3 GetPosition()
@@ -231,7 +237,6 @@ public class PlayerController : MonoBehaviour
         {
             foreach (GameObject hit in objectsInTrigger)
             {
-                Debug.Log("hit" + hit.gameObject.name);
                 
                 if (hit != null)
                 {
@@ -240,6 +245,10 @@ public class PlayerController : MonoBehaviour
                     if (hit.GetComponent<EnemyController>().currentHealth <= 0)
                     {
                         objectsInTrigger.Remove(hit);
+                        if (levelManager.isKillEveryone)
+                        {
+                            levelManager.AddItem();
+                        }
                         Destroy(hit);
                     }
                 }
@@ -249,7 +258,7 @@ public class PlayerController : MonoBehaviour
         }
         catch
         {
-            Debug.Log("Jebiga");
+            //Debug.Log("Ups");
         }
 
         yield return new WaitForSeconds(attackDuration);
@@ -257,8 +266,6 @@ public class PlayerController : MonoBehaviour
 
         isAttacking = false;
         anim.SetBool("isAttacking", false);
-        //attackArea.SetActive(false);
-
 
     }
 
@@ -289,6 +296,16 @@ public class PlayerController : MonoBehaviour
         }
         UpdateHealth();
     }
+    public void AddStamina(float addStamina)
+    {
+        currentStamina += addStamina;
+        if (currentStamina > maxStamina)
+        {
+            currentStamina = maxStamina;
+        }
+        UpdateStamina();
+    }
+
 
     private void UpdateHealth()
     {

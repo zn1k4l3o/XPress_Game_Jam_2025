@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public bool isRanged = false;
+
     public float moveSpeed = 3f;
     public float attackRange = 1.5f;
     public float attackCooldown = 1f;
@@ -24,10 +26,16 @@ public class EnemyController : MonoBehaviour
 
     public Color flashColor = Color.red;
 
+    public Animator animEnm;
+    public GameObject projectile; 
+
+    private SpriteRenderer spriteRenderer;
+
     private void Start()
     {
         playerController = GameObject.Find("player").GetComponent<PlayerController>();
         currentHealth = maxHealth;
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -48,8 +56,19 @@ public class EnemyController : MonoBehaviour
             }
             else
             {
-                AttackPlayer();
+
+                if (isRanged && attackTimer <= 0)
+                {
+                    Shoot();
+                    attackTimer = attackCooldown;
+                }
+                else
+                {
+                StartCoroutine(AttackPlayer());
+                }
             }
+
+            
 
             if (attackTimer > 0f)
                 attackTimer -= Time.deltaTime;
@@ -66,20 +85,36 @@ public class EnemyController : MonoBehaviour
     void FollowPlayer()
     {
         Vector2 direction = (playerController.GetPosition() - transform.position).normalized;
+        if (direction.x < 0 && spriteRenderer.flipX == false)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (direction.x > 0 && spriteRenderer.flipX == true)
+        {
+            spriteRenderer.flipX = false;
+
+        }
         transform.position += (Vector3)direction * moveSpeed * Time.deltaTime;
     }
 
-    void AttackPlayer()
-    {
+    System.Collections.IEnumerator AttackPlayer()
+    {   
+        
         if (attackTimer <= 0f)
         {
+            animEnm.SetBool("isAttacking", true);
             if (playerController != null)
             {
                 playerController.TakeDamage(damage);
                 //Debug.Log("Enemy hit the player!");
                 attackTimer = attackCooldown;
             }
+            yield return new WaitForSeconds(0.5f);
+            animEnm.SetBool("isAttacking", false);
         }
+        
+        
+
     }
 
     public void TakeDamage(float damage)
@@ -88,7 +123,7 @@ public class EnemyController : MonoBehaviour
         if (currentHealth <= 0f)
         {
             //Die();
-            Debug.Log("damaged " + damage);
+            //Debug.Log("damaged " + damage);
         }
         flashTimer = flashDuration;
 
@@ -99,6 +134,7 @@ public class EnemyController : MonoBehaviour
         playerController.objectsInTrigger.Remove(gameObject);
         gameObject.SetActive(false);
     }
+
     void RotateCharacter(Vector3 targetPos)
     {
         Vector3 rotateDirection = (targetPos - transform.position).normalized;
@@ -107,5 +143,11 @@ public class EnemyController : MonoBehaviour
         float angle = Mathf.Atan2(rotateDirection.y, rotateDirection.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
+    }
+
+    void Shoot()
+    {
+        GameObject newProjectile = Instantiate(projectile, transform.position, Quaternion.identity);
+        newProjectile.GetComponent<Projectile>().targetPos = playerController.transform.position;
     }
 }
