@@ -50,11 +50,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRanged: 1
   isFinal: 1
-  moveSpeed: 1.5
+  moveSpeed: 25
   attackRange: 5
-  attackCooldown: 2.5
-  damage: 10
-  maxHealth: 100
+  attackCooldown: 2
+  damage: 50
+  maxHealth: 500
   currentHealth: 0
   canMove: 1
   canPlay: 0

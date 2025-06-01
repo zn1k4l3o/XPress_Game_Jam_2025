@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: 1feb5758b3166d040b54e27570d9c56c
+guid: 0b92219a440e2d74f903d0b292f62bdd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7703164779122715773
-    second: sijeno_1_0
+      213: 7829007464044354663
+    second: nuggets_0
+  - first:
+      213: 1768997708426819490
+    second: nuggets_1
+  - first:
+      213: -1938899352398495291
+    second: nuggets_2
+  - first:
+      213: -6348582787836003533
+    second: nuggets_3
+  - first:
+      213: 6536682578654650947
+    second: nuggets_4
+  - first:
+      213: -5629481303847741860
+    second: nuggets_5
+  - first:
+      213: -5405403794168374984
+    second: nuggets_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,6 +102,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -98,19 +129,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
     buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -165,23 +183,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sijeno_1_0
+      name: nuggets_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 459
-        height: 446
+        width: 1200
+        height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 383171e427cd81590800000000000000
-      internalID: -7703164779122715773
+      spriteID: 76cde360fc836ac60800000000000000
+      internalID: 7829007464044354663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuggets_1
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 637
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7b2431b0ebc8810800000000000000
+      internalID: 1768997708426819490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuggets_2
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 636
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c18d0dcf45a715e0800000000000000
+      internalID: -1938899352398495291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuggets_3
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 637
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33b30e7379d45e7a0800000000000000
+      internalID: -6348582787836003533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuggets_4
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 637
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342e1362c26f6ba50800000000000000
+      internalID: 6536682578654650947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuggets_5
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 637
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56d376949010e1b0800000000000000
+      internalID: -5629481303847741860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nuggets_6
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1
+        width: 719
+        height: 421
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8399b0563e52cf4b0800000000000000
+      internalID: -5405403794168374984
       vertices: []
       indices: 
       edges: []
@@ -190,7 +340,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7c3edead84a0dc24da39f7a7d380c4a8
     internalID: 0
     vertices: []
     indices: 
@@ -200,7 +350,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sijeno_1_0: -7703164779122715773
+      nuggets_0: 7829007464044354663
+      nuggets_1: 1768997708426819490
+      nuggets_2: -1938899352398495291
+      nuggets_3: -6348582787836003533
+      nuggets_4: 6536682578654650947
+      nuggets_5: -5629481303847741860
+      nuggets_6: -5405403794168374984
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

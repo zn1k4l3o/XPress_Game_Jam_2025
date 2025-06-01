@@ -55,6 +55,7 @@ public class LevelManager : MonoBehaviour
         WinScreen.SetActive(false);
         if (PausePanel != null)
             PausePanel.SetActive(false);
+
         UpdateTimer();
     }
 
@@ -196,6 +197,7 @@ public class LevelManager : MonoBehaviour
         }
         ChangeGameState(!open);
         PausePanel.SetActive(open);
+        
     }
 
     public void AddItem()

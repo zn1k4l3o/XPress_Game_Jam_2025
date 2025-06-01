@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|c:\\unity projekti\\game\\xpress_game_jam_2025\\xpress25\\assets\\finalaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|solutionrelative:assets\\finalaudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|c:\\unity projekti\\game\\xpress_game_jam_2025\\xpress25\\assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC5C7EC3-5142-208D-269A-03F69A7FFA40}|Assembly-CSharp.csproj|C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\assets\\scripts\\staminapowerup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,24 +46,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "FinalAudio.cs",
+              "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\FinalAudio.cs",
+              "RelativeDocumentMoniker": "Assets\\FinalAudio.cs",
+              "ToolTip": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\FinalAudio.cs",
+              "RelativeToolTip": "Assets\\FinalAudio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T03:20:07.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "LevelManager.cs",
               "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\Scripts\\LevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LevelManager.cs",
               "ToolTip": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\Scripts\\LevelManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\LevelManager.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAIwFIAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAIwFgAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T20:50:30.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CollectablePickup.cs",
               "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\CollectablePickup.cs",
               "RelativeDocumentMoniker": "Assets\\CollectablePickup.cs",
@@ -70,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Projectile.cs",
               "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\Projectile.cs",
@@ -81,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "EnemyController.cs",
               "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\Scripts\\EnemyController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyController.cs",
@@ -89,25 +106,24 @@
               "RelativeToolTip": "Assets\\Scripts\\EnemyController.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAIwGUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T19:03:22.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-31T19:03:22.018Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAABQBAAAAAAAAAAAiwEcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T18:36:03.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "StaminaPowerup.cs",
               "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\Scripts\\StaminaPowerup.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StaminaPowerup.cs",
@@ -119,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "HealthPowerup.cs",
               "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\HealthPowerup.cs",
               "RelativeDocumentMoniker": "Assets\\HealthPowerup.cs",
@@ -131,7 +147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "EnemyController.cs",
               "DocumentMoniker": "C:\\Unity Projekti\\game\\XPress_Game_Jam_2025\\XPress25\\Assets\\EnemyController.cs",
               "RelativeDocumentMoniker": "Assets\\EnemyController.cs",

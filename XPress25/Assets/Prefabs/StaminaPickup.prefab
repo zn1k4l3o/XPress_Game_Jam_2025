@@ -137,4 +137,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb9a4a0959d5760428659a9e4197c679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  addStamina: 20
+  addStamina: 50
