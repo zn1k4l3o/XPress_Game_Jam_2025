@@ -69,6 +69,7 @@ public bool canDash = false;
         Physics2D.IgnoreLayerCollision(6,7);
         levelManager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        
     }
 
     void Update()

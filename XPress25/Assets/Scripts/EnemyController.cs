@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public bool isRanged = false;
+    public bool isFinal = false;
 
     public float moveSpeed = 3f;
     public float attackRange = 1.5f;
@@ -36,6 +37,7 @@ public class EnemyController : MonoBehaviour
         playerController = GameObject.Find("player").GetComponent<PlayerController>();
         currentHealth = maxHealth;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        isFinal = false;
     }
 
     void Update()
@@ -113,18 +115,16 @@ public class EnemyController : MonoBehaviour
             animEnm.SetBool("isAttacking", false);
         }
         
-        
-
     }
 
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        if (currentHealth <= 0f)
+        if (isFinal && currentHealth <= 0f)
         {
-            //Die();
-            //Debug.Log("damaged " + damage);
+            GameObject.FindGameObjectWithTag("LevelManager").GetComponent<LevelManager>().FinalWin();
         }
+
         flashTimer = flashDuration;
 
     }

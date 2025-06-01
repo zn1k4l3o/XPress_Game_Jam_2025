@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class LevelManager : MonoBehaviour
     public bool isTimed = false;
     public bool isKillEveryone = false;
     public bool isCollectItems = false;
+    public bool isTwoPhase = false;
 
     public GameObject TutorialPanel;
     public GameObject DeathScreen;
@@ -34,6 +36,8 @@ public class LevelManager : MonoBehaviour
     public GameObject enemyPrefab;
     public int collectedItems = 0;
     public int totalItems = 15;
+    public GameObject boss;
+    private bool isSecondaPhase = false;
 
     void Start()
     {
@@ -73,6 +77,18 @@ public class LevelManager : MonoBehaviour
                 spawnTimer = timeToSpawn;
                 SpawnEnemy();
             }
+        }
+        if (isTwoPhase)
+        {
+            if (timeAlive > targetTime)
+            {
+                GameObject newBoss = Instantiate(boss, bottomLeftSpawnBorder, Quaternion.identity);
+                newBoss.GetComponent<EnemyController>().canPlay = true;
+                newBoss.GetComponent<EnemyController>().isFinal = true;
+                isTwoPhase = false;
+            }
+            UpdateTimer();
+
         }
     }
 
@@ -134,7 +150,7 @@ public class LevelManager : MonoBehaviour
 
     public void UpdateTimer()
     {
-        if (isTimed)
+        if (isTimed || isTwoPhase)
         {
             if (timeAlive >= targetTime)
             {
@@ -189,6 +205,12 @@ public class LevelManager : MonoBehaviour
             WinScreen.SetActive(true);
         }
         UpdateTimer();
+    }
+
+    public void FinalWin()
+    {
+        ChangeGameState(false);
+        WinScreen.SetActive(true);
     }
 
 }
