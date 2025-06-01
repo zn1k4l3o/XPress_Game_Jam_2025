@@ -19,4 +19,4 @@ Graphics: Nina Mravinac
 
 Unity and Programming: Leo Znika, Petra Kukić Halužan, Petra Štetić
 
-Game Design: Petra Kukić Halužan, Pera Štetić
+Game Design: Petra Kukić Halužan, Petra Štetić
