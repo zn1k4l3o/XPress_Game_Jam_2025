@@ -487,15 +487,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7823812792681459182, guid: 0e77741e3425d9049a88d36df7d5e669, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.87
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 7823812792681459182, guid: 0e77741e3425d9049a88d36df7d5e669, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.87
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 7823812792681459182, guid: 0e77741e3425d9049a88d36df7d5e669, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.87
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 7823812792681459182, guid: 0e77741e3425d9049a88d36df7d5e669, type: 3}
       propertyPath: m_LocalPosition.x
@@ -878,6 +878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 5763651108168110732, guid: abcff6e2b6c67bd429b796043213199c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6845664658950612673, guid: abcff6e2b6c67bd429b796043213199c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -912,27 +916,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8570321959980961766, guid: abcff6e2b6c67bd429b796043213199c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8570321959980961766, guid: abcff6e2b6c67bd429b796043213199c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8570321959980961766, guid: abcff6e2b6c67bd429b796043213199c, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8570321959980961766, guid: abcff6e2b6c67bd429b796043213199c, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8570321959980961766, guid: abcff6e2b6c67bd429b796043213199c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1243.1716
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8570321959980961766, guid: abcff6e2b6c67bd429b796043213199c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 600
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8570321959980961766, guid: abcff6e2b6c67bd429b796043213199c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1621,6 +1625,10 @@ PrefabInstance:
       propertyPath: levelManager
       value: 
       objectReference: {fileID: 1811113275}
+    - target: {fileID: 7095940406413732860, guid: 387905743b995d24f94520580a863d23, type: 3}
+      propertyPath: currentHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7095940406413732860, guid: 387905743b995d24f94520580a863d23, type: 3}
       propertyPath: staminaSlider
       value: 

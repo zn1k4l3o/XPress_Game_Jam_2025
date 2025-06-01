@@ -18,6 +18,15 @@ public class AttackPlayerCheck : MonoBehaviour
             Debug.Log("Entered: " + other.name);
         }
     }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (!playerController.objectsInTrigger.Contains(other.gameObject) && other.tag == "Enemy")
+        {
+            playerController.AddEnemy(other.gameObject);
+            Debug.Log("Staying: " + other.name);
+        }
+    }
+
 
     void OnTriggerExit2D(Collider2D other)
     {

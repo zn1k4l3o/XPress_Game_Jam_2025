@@ -610,19 +610,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7823812792681459182, guid: 0e77741e3425d9049a88d36df7d5e669, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0.000030518
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7823812792681459182, guid: 0e77741e3425d9049a88d36df7d5e669, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.87
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 7823812792681459182, guid: 0e77741e3425d9049a88d36df7d5e669, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.87
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 7823812792681459182, guid: 0e77741e3425d9049a88d36df7d5e669, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.87
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 7823812792681459182, guid: 0e77741e3425d9049a88d36df7d5e669, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2962,6 +2962,22 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1884053127}
+    - target: {fileID: 7525493299902284489, guid: 6578854701a475a4595eda28a8c8c551, type: 3}
+      propertyPath: topRightSpawnBorder.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525493299902284489, guid: 6578854701a475a4595eda28a8c8c551, type: 3}
+      propertyPath: topRightSpawnBorder.y
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525493299902284489, guid: 6578854701a475a4595eda28a8c8c551, type: 3}
+      propertyPath: bottomLeftSpawnBorder.x
+      value: -8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7525493299902284489, guid: 6578854701a475a4595eda28a8c8c551, type: 3}
+      propertyPath: bottomLeftSpawnBorder.y
+      value: -10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
